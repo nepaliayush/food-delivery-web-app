@@ -3,7 +3,7 @@ import './PlaceOrder.css'
 import { StoreContext } from '../../context/StoreContext'
 const PlaceOrder = () => {
 
-  const {getTotalCartAmount} = useContext(StoreContext);
+  const { getTotalCartAmount } = useContext(StoreContext);
   return (
     <form action="" className='place-order'>
       <div className="place-oredr-left">
@@ -14,28 +14,19 @@ const PlaceOrder = () => {
         </div>
         <input type="emailt" placeholder='Email address' />
         <input type="text" placeholder='street' />
-
-
         <div className="multi-field">
           <input type="text" placeholder='City' />
           <input type="text" placeholder='State' />
-
         </div>
-
         <div className="multi-field">
           <input type="text" placeholder='Zip code' />
           <input type="text" placeholder='Country' />
-
-
         </div>
-
         <input type="text" placeholder='Phone' />
       </div>
-
       <div className="palce-order-right">
         <div className="cart-total">
           <h2>Cart totals</h2>
-
           <div>
             <div className="cart-total-details">
               <p>Subtotal</p>
@@ -54,10 +45,7 @@ const PlaceOrder = () => {
           </div>
           <button onClick={() => navigate('/order')}>Proceed To Payment</button>
         </div>
-
       </div>
-
-
     </form>
   )
 }
